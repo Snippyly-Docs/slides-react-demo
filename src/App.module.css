@@ -1,10 +1,5 @@
-
-@font-face {
-  font-family: 'Poppins';
-  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
-}
-
 .app-container {
   font-family: Poppins !important;
-  padding: 2vw;
+  flex: 1;
 }
+

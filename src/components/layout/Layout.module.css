@@ -1,0 +1,16 @@
+.main-content {
+  height: calc(100vh - 15.38vh);
+  display: flex;
+}
+
+.sidebar {
+  width: 24.6vw;
+  border-right: 1px solid #D4D6DF;
+}
+
+.slide-content {
+  width: calc(100vw - 24.6vw);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}

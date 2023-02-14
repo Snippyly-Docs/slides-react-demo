@@ -1,0 +1,12 @@
+.toolbar {
+  height: 6.73vh;
+  background-color: #F4F5F6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.toolbar > img {
+  cursor: pointer;
+}
