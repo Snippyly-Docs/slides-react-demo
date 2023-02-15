@@ -46,6 +46,13 @@
   height: 13.34vh;
 }
 
+.slide-preview > .placeholder {
+  width: 14.06vw;
+  height: 13.34vh;
+  border-radius: 8.87968px;
+  border: 2px solid #E6E8EC;
+}
+
 .thumbnail-text {
   position: absolute;
   color: white;

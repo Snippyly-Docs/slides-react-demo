@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useSnippylyClient } from '@snippyly/react';
 import { generateUserData } from './util/user';
 import styles from './App.module.css';
+import { useState } from 'react';
 
 
 import Toolbar from "./components/toolbar/Toolbar";
@@ -23,13 +24,19 @@ const App = () => {
 
   }, [client]);
 
+  const [activePreview, setActivePreview] = useState(0);
+
+  const setActive = (idx: number) => {
+    setActivePreview(idx);
+  }
+
   return (
     <div className={styles['app-container']}>
       <Toolbar />
       <Spacer />
       <Layout
-        sidebar={<Sidebar />}
-        slide={<Slide />}
+        sidebar={<Sidebar activePreview={activePreview} setActive={setActivePreview} />}
+        slide={<Slide active={activePreview} />}
       />
     </div>
   );
