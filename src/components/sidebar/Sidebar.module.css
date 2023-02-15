@@ -20,22 +20,35 @@
 .slide-previews {
   height: calc(100vh - 23.07vh);
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .slide-preview {
   width: 19.6vw;
   height: 17.19vh;
-  background-color: #625df547;
   border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.2vw;
+  cursor: pointer;
+  position: relative;
+}
+
+.slide-preview.active {
+  background-color: #625df547;
 }
 
 .slide-preview > img {
   width: 14.06vw;
   height: 13.34vh;
+}
+
+.thumbnail-text {
+  position: absolute;
+  color: white;
+  margin-left: 2vw;
+  font-size: 0.9vw;
 }
