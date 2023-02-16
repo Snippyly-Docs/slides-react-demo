@@ -23,3 +23,13 @@
   margin-right: 3.8vw;
   gap: 1vw;
 }
+
+.tag-tool {
+  width: 1vw !important;
+  height: 1vw !important;
+}
+
+.recorder-tool {
+  width: 1vw !important;
+  height: 1vw !important;
+}
