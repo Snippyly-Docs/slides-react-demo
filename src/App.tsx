@@ -21,14 +21,11 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
+    client.setDocumentId('project_name');
 
   }, [client]);
 
   const [activePreview, setActivePreview] = useState(0);
-
-  const setActive = (idx: number) => {
-    setActivePreview(idx);
-  }
 
   return (
     <div className={styles['app-container']}>
