@@ -21,18 +21,25 @@ const App = () => {
 
     const user = generateUserData();
     client.identify(user);
-    client.setDocumentId('project_name');
+    client.setDocumentId('slides_project_id');
 
   }, [client]);
 
   const [activePreview, setActivePreview] = useState(0);
+  
+  const setActive = (idx: number) => {
+    setActivePreview(idx);
+    if (client) {
+      client.setLocation({slideIdx: idx});
+    }
+  }
 
   return (
     <div className={styles['app-container']}>
       <Toolbar />
       <Spacer />
       <Layout
-        sidebar={<Sidebar activePreview={activePreview} setActive={setActivePreview} />}
+        sidebar={<Sidebar activePreview={activePreview} setActive={setActive} />}
         slide={<Slide active={activePreview} />}
       />
     </div>
