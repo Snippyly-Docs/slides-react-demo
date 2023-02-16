@@ -1,6 +1,6 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence } from '@snippyly/react';
+import { SnippylyPresence, SnippylyRecorderTool } from '@snippyly/react';
 
 import BarsIcon from '../../icons/bars.svg';
 import GfxIcon from '../../icons/gfx.svg';
@@ -17,6 +17,7 @@ const Toolbar = () => {
       <img src={GfxIcon} />
       <img src={BarsIcon} />
       <div className={styles['toolbar-right']}>
+        <SnippylyRecorderTool />
         <SnippylyPresence />
       </div>
     </div>
