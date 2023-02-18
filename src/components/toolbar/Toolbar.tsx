@@ -17,6 +17,12 @@ const Toolbar = () => {
       <img src={GfxIcon} />
       <img src={BarsIcon} />
       <div className={styles['toolbar-right']}>
+        {/**
+         * Snippyly Code Example
+         * Feature: Tags -- Step #2
+         * Feature: Recorder -- Step #2
+         * Feature: Presence
+         */}
         <SnippylyTagTool className={styles['tag-tool']} />
         <SnippylyRecorderTool type="all" className={styles['recorder-tool']} />
         <SnippylyPresence />

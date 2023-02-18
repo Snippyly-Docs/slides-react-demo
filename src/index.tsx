@@ -8,6 +8,12 @@ const root = createRoot(rootContainer as HTMLElement);
 root.render(
   <React.StrictMode>
     <SnippylyProvider apiKey="WDMgKshFEsPTqvBjUcH3">
+      {/**
+       * Snippyly Code Example
+       * Feature: Recorder -- Step #1
+       * Feature: Live Cursors
+       * Feature: Tags -- Step #1
+       */}
       <SnippylyRecorderControlPanel />
       <SnippylyRecorderNotes />
       <SnippylyCursor />

@@ -13,6 +13,10 @@ import Sidebar from './components/sidebar/Sidebar';
 
 const App = () => {
 
+  /**
+   * Snippyly Code Example
+   * Initializes the Snippyly SDK.
+   */
   const { client } = useSnippylyClient();
 
   useEffect(() => {
