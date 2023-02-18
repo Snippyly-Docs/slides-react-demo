@@ -2,6 +2,13 @@
 
 This is an example Dashboard React app with **Snippyly** SDK features.
 
+## Features
+
+- Recorder
+- Live Cursors
+- Presence
+- Tags
+
 ## Code Examples
 
 You can view **Snippyly** specific code examples by searching for `Snippyly Code Example` in your IDE. For example if you use **VS Code**, use the following:
