@@ -33,6 +33,12 @@ const App = () => {
   
   const setActive = (idx: number) => {
     setActivePreview(idx);
+    /**
+     * Snippyly Code Example
+     * This section sets the user's location to the
+     * slide index so that cursors correctly appear
+     * for users that are on the same slide.
+     */
     if (client) {
       client.setLocation({slideIdx: idx});
     }

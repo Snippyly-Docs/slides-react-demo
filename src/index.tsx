@@ -11,8 +11,8 @@ root.render(
       {/**
        * Snippyly Code Example
        * Feature: Recorder -- Step #1
-       * Feature: Live Cursors
        * Feature: Tags -- Step #1
+       * Feature: Live Cursors
        */}
       <SnippylyRecorderControlPanel />
       <SnippylyRecorderNotes />
