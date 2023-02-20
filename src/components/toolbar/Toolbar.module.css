@@ -33,3 +33,7 @@
   width: 1vw !important;
   height: 1vw !important;
 }
+
+snippyly-comment-tool, snippyly-tag-tool {
+  margin-top: 0.5vh;
+}
