@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/slides-react-demo-all/static/css/main.9691ac04.css",
-    "main.js": "/slides-react-demo-all/static/js/main.6d03329f.js",
-    "static/media/bg.png": "/slides-react-demo-all/static/media/bg.3589091e79090a5e9f6c.png",
-    "static/media/thumbnail.png": "/slides-react-demo-all/static/media/thumbnail.e8d90e0012f1596a91cb.png",
-    "index.html": "/slides-react-demo-all/index.html",
-    "static/media/text.svg": "/slides-react-demo-all/static/media/text.9ee1278dac82262556842d3e87a54ef4.svg",
-    "static/media/gfx.svg": "/slides-react-demo-all/static/media/gfx.a7d920b46c0e1315c663e07c04ea13d4.svg",
-    "static/media/shapes.svg": "/slides-react-demo-all/static/media/shapes.8c4cefe7871bd596bcd89e9c362f0ff0.svg",
-    "static/media/bars.svg": "/slides-react-demo-all/static/media/bars.7aa7d389108adacbd581da1edfbb65d1.svg",
-    "static/media/plus.svg": "/slides-react-demo-all/static/media/plus.d34fa11653766d49448875782a923067.svg",
-    "main.9691ac04.css.map": "/slides-react-demo-all/static/css/main.9691ac04.css.map",
-    "main.6d03329f.js.map": "/slides-react-demo-all/static/js/main.6d03329f.js.map"
+    "main.css": "/slides-react-demo/static/css/main.9691ac04.css",
+    "main.js": "/slides-react-demo/static/js/main.7050d9ff.js",
+    "static/media/bg.png": "/slides-react-demo/static/media/bg.3589091e79090a5e9f6c.png",
+    "static/media/thumbnail.png": "/slides-react-demo/static/media/thumbnail.e8d90e0012f1596a91cb.png",
+    "static/media/text.svg": "/slides-react-demo/static/media/text.9ee1278dac82262556842d3e87a54ef4.svg",
+    "index.html": "/slides-react-demo/index.html",
+    "static/media/gfx.svg": "/slides-react-demo/static/media/gfx.a7d920b46c0e1315c663e07c04ea13d4.svg",
+    "static/media/shapes.svg": "/slides-react-demo/static/media/shapes.8c4cefe7871bd596bcd89e9c362f0ff0.svg",
+    "static/media/bars.svg": "/slides-react-demo/static/media/bars.7aa7d389108adacbd581da1edfbb65d1.svg",
+    "static/media/plus.svg": "/slides-react-demo/static/media/plus.d34fa11653766d49448875782a923067.svg",
+    "main.9691ac04.css.map": "/slides-react-demo/static/css/main.9691ac04.css.map",
+    "main.7050d9ff.js.map": "/slides-react-demo/static/js/main.7050d9ff.js.map"
   },
   "entrypoints": [
     "static/css/main.9691ac04.css",
-    "static/js/main.6d03329f.js"
+    "static/js/main.7050d9ff.js"
   ]
 }
