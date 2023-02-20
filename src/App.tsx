@@ -26,6 +26,9 @@ const App = () => {
     const user = generateUserData();
     client.identify(user);
     client.setDocumentId('slides_project_id');
+    
+    // Initialize location with first slide
+    client.setLocation({slideIdx: 0});
 
   }, [client]);
 
