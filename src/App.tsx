@@ -28,6 +28,7 @@ const App = () => {
       );
       window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
     }
+    
   }, []);
 
   /**
