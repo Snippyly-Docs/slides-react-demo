@@ -13,24 +13,6 @@ import Sidebar from './components/sidebar/Sidebar';
 
 const App = () => {
 
-  useEffect(() => {
-
-    const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
-
-    if (isDataReset === null) {
-      fetch(
-        "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
-        {
-          headers: { "Content-Type": "application/json" },
-          method: "POST",
-          body: JSON.stringify({ documentId: 'slides_project_id' }),
-        }
-      );
-      window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
-    }
-    
-  }, []);
-
   /**
    * Snippyly Code Example
    * Initializes the Snippyly SDK.
@@ -44,14 +26,40 @@ const App = () => {
     const user = generateUserData();
     client.identify(user);
     client.setDocumentId('slides_project_id');
-    
+
     // Initialize location with first slide
-    client.setLocation({slideIdx: 0});
+    client.setLocation({ slideIdx: 0 });
+
+  }, [client]);
+
+  useEffect(() => {
+
+    if (!client) return;
+
+    client.getPresenceElement().getOnlineUsersOnCurrentDocument().subscribe(users => {
+      if (users === null) return;
+      if (users.length === 0) {
+        const isDataReset = window.sessionStorage.getItem('_snippyly_demo_reset');
+
+        if (isDataReset === null) {
+          console.log('reset data!!');
+          fetch(
+            "https://us-central1-snippyly-sdk-prod.cloudfunctions.net/resetDemoData",
+            {
+              headers: { "Content-Type": "application/json" },
+              method: "POST",
+              body: JSON.stringify({ documentId: 'slides_project_id' }),
+            }
+          );
+          window.sessionStorage.setItem('_snippyly_demo_reset', 'true');
+        }
+      }
+    });
 
   }, [client]);
 
   const [activePreview, setActivePreview] = useState(0);
-  
+
   const setActive = (idx: number) => {
     setActivePreview(idx);
     /**
@@ -61,7 +69,7 @@ const App = () => {
      * for users that are on the same slide.
      */
     if (client) {
-      client.setLocation({slideIdx: idx});
+      client.setLocation({ slideIdx: idx });
     }
   }
 
