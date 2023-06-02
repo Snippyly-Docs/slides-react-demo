@@ -1,6 +1,6 @@
 import styles from './Toolbar.module.css';
 
-import { SnippylyPresence, SnippylyRecorderTool, SnippylyTagTool } from '@snippyly/react';
+import { VeltPresence, VeltRecorderTool, VeltTagTool } from '@veltdev/react';
 
 import BarsIcon from '../../icons/bars.svg';
 import GfxIcon from '../../icons/gfx.svg';
@@ -18,14 +18,14 @@ const Toolbar = () => {
       <img src={BarsIcon} />
       <div className={styles['toolbar-right']}>
         {/**
-         * Snippyly Code Example
+         * Velt Code Example
          * Feature: Tags -- Step #2
          * Feature: Recorder -- Step #2
          * Feature: Presence
          */}
-        <SnippylyTagTool className={styles['tag-tool']} />
-        <SnippylyRecorderTool type="all" className={styles['recorder-tool']} />
-        <SnippylyPresence />
+        <VeltTagTool className={styles['tag-tool']} />
+        <VeltRecorderTool type="all" className={styles['recorder-tool']} />
+        <VeltPresence />
       </div>
     </div>
   );
